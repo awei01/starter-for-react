@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import bar from '~/bar'
-
-const title = 'My Minimal React Webpack Babel Setup'
+import TestComponent from '~/TestComponent'
 
 ReactDOM.render(
-  <div disabled={true}>{title} hi { bar }</div>,
+  <TestComponent />,
   document.getElementById('app')
 )
 
