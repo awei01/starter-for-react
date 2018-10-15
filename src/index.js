@@ -1,10 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import TestComponent from '~/TestComponent'
+import ReactDom from 'react-dom'
 
-ReactDOM.render(
-  <TestComponent />,
-  document.getElementById('app')
+function App () {
+  return (<h1>App</h1>)
+}
+
+ReactDom.render(
+  (<App />),
+  document.getElementById('module-root')
 )
-
-module.hot.accept()
