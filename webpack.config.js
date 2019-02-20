@@ -57,7 +57,7 @@ module.exports = {
       inject: true
     }),
     new webpack.DefinePlugin({
-      'process.env': env
+      'process.env': JSON.stringify(env)
     })
   ],
   // dev server configs
