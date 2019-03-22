@@ -36,15 +36,8 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/env', '@babel/react']
-            }
-          }
+          { loader: 'babel-loader' }
         ],
-        // don't know why it's not loading from our .babelrc file
-        // loader: 'babel-loader'
       },
     ]
   },
