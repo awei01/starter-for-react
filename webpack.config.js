@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
-const env = require('./.env')
+// const env = require('./.env')
 
 function _resolvePath (...args) {
   const parts = [__dirname].concat(args)
@@ -49,9 +49,9 @@ module.exports = {
       template: _resolvePath('public', 'index.html'),
       inject: true
     }),
-    new webpack.DefinePlugin({
-      'process.env': JSON.stringify(env)
-    })
+    // new webpack.DefinePlugin({
+    //   'process.env': JSON.stringify(env)
+    // })
   ],
   // dev server configs
   devServer: {
