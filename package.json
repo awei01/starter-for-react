@@ -1,7 +1,7 @@
 {
-  "name": "braille-component",
+  "name": "starter-for-react",
   "version": "0.0.0",
-  "description": "Boilerplate for a Braille Army web module",
+  "description": "Starter boilerplate for react",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server -d"
